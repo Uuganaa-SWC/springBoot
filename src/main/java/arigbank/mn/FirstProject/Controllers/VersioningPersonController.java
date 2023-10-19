@@ -1,5 +1,8 @@
-package arigbank.mn.FirstProject;
+package arigbank.mn.FirstProject.Controllers;
 
+import arigbank.mn.FirstProject.Name;
+import arigbank.mn.FirstProject.PersonV1;
+import arigbank.mn.FirstProject.PersonV2;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -39,7 +42,7 @@ public class VersioningPersonController {
 
     @GetMapping(path = "/person/accept", produces = "application/vnd.company.app-v1+json")
     public PersonV1 getFirstVersionOfPersonAcceptHeader() {
-        return new PersonV1("Bob Charlie");
+        return new PersonV1("Uuganaa Developer");
     }
 
     @GetMapping(path = "/person/accept", produces = "application/vnd.company.app-v2+json")

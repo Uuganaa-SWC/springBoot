@@ -1,5 +1,6 @@
-package arigbank.mn.FirstProject;
+package arigbank.mn.FirstProject.Controllers;
 
+import arigbank.mn.FirstProject.HelloWorldBean;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;

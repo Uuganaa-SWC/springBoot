@@ -1,5 +1,8 @@
-package arigbank.mn.FirstProject;
+package arigbank.mn.FirstProject.Controllers;
 
+import arigbank.mn.FirstProject.User;
+import arigbank.mn.FirstProject.UserDaoService;
+import arigbank.mn.FirstProject.UserNotFoundException;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -9,11 +12,11 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-public class UserResource {
+public class UserResourceController {
 
     private final UserDaoService service;
 
-    public UserResource(UserDaoService service) {
+    public UserResourceController(UserDaoService service) {
         this.service = service;
 
     }
